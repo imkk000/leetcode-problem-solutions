@@ -4,7 +4,7 @@ import (
 	"math/bits"
 	"testing"
 
-	tc "github.com/nattakit-boonyang/go-testcase-builder"
+	. "github.com/nattakit-boonyang/go-testcase-builder"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -20,14 +20,14 @@ metadata:
 */
 
 func TestCountPrime(t *testing.T) {
-	tc.NewTestcases(t).
+	NewTestcases(t).
 		Add(6, []int{1, 10}).
 		Add(4, []int{6, 10}).
 		Add(5, []int{10, 15}).
 		Add(3754, []int{1e6 - 1e4, 1e6}).
 		Add(65, []int{1, 100}).
 		Add(3807, []int{524287 - 1e4, 524287}).
-		Each(func(a *assert.Assertions, td tc.TestData) {
+		Each(func(a *assert.Assertions, td TestData) {
 			input := td.Input.([]int)
 			left, right := input[0], input[1]
 			actual := countPrimeSetBits(left, right)

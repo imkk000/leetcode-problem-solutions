@@ -5,7 +5,7 @@ import (
 	"math/bits"
 	"testing"
 
-	tc "github.com/nattakit-boonyang/go-testcase-builder"
+	. "github.com/nattakit-boonyang/go-testcase-builder"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -30,7 +30,7 @@ func isPowerOfFour(n int) bool {
 }
 
 func TestIsPowerOfFour(t *testing.T) {
-	tc.NewTestcases(t).
+	NewTestcases(t).
 		Add(true, 16).
 		Add(false, 5).
 		Add(true, 1).
@@ -44,7 +44,7 @@ func TestIsPowerOfFour(t *testing.T) {
 		Add(false, math.MinInt32).
 		Add(false, math.MaxInt32-1).
 		Add(false, math.MinInt32+1).
-		Each(func(a *assert.Assertions, td tc.TestData) {
+		Each(func(a *assert.Assertions, td TestData) {
 			actual := isPowerOfFour(td.Input.(int))
 
 			a.Equal(td.Expectation, actual)

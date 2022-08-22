@@ -1,5 +1,13 @@
 package leetcode_test
 
+import (
+	"strconv"
+	"testing"
+
+	. "github.com/nattakit-boonyang/go-testcase-builder"
+	"github.com/stretchr/testify/assert"
+)
+
 /*
 metadata:
   id: "412"
@@ -11,25 +19,17 @@ metadata:
     - "1\n3\n5\n6\n10\n12\n15\n100\n10000"
 */
 
-import (
-	"strconv"
-	"testing"
-
-	tc "github.com/nattakit-boonyang/go-testcase-builder"
-	"github.com/stretchr/testify/assert"
-)
-
 func TestFizzBuzz(t *testing.T) {
-	tc.NewTestcases(t).
-		Add(tc.MakeStringSlice(`["1"]`), 1).
-		Add(tc.MakeStringSlice(`["1","2","Fizz"]`), 3).
-		Add(tc.MakeStringSlice(`["1","2","Fizz","4","Buzz"]`), 5).
-		Add(tc.MakeStringSlice(`["1","2","Fizz","4","Buzz","Fizz"]`), 6).
-		Add(tc.MakeStringSlice(`["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz"]`), 10).
-		Add(tc.MakeStringSlice(`["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz"]`), 12).
-		Add(tc.MakeStringSlice(`["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]`), 15).
-		Add(tc.MakeStringSlice(`["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz","16","17","Fizz","19","Buzz","Fizz","22","23","Fizz","Buzz","26","Fizz","28","29","FizzBuzz","31","32","Fizz","34","Buzz","Fizz","37","38","Fizz","Buzz","41","Fizz","43","44","FizzBuzz","46","47","Fizz","49","Buzz","Fizz","52","53","Fizz","Buzz","56","Fizz","58","59","FizzBuzz","61","62","Fizz","64","Buzz","Fizz","67","68","Fizz","Buzz","71","Fizz","73","74","FizzBuzz","76","77","Fizz","79","Buzz","Fizz","82","83","Fizz","Buzz","86","Fizz","88","89","FizzBuzz","91","92","Fizz","94","Buzz","Fizz","97","98","Fizz","Buzz"]`), 100).
-		Each(func(a *assert.Assertions, td tc.TestData) {
+	NewTestcases(t).
+		Add(MakeStringSlice(`["1"]`), 1).
+		Add(MakeStringSlice(`["1","2","Fizz"]`), 3).
+		Add(MakeStringSlice(`["1","2","Fizz","4","Buzz"]`), 5).
+		Add(MakeStringSlice(`["1","2","Fizz","4","Buzz","Fizz"]`), 6).
+		Add(MakeStringSlice(`["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz"]`), 10).
+		Add(MakeStringSlice(`["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz"]`), 12).
+		Add(MakeStringSlice(`["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]`), 15).
+		Add(MakeStringSlice(`["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz","16","17","Fizz","19","Buzz","Fizz","22","23","Fizz","Buzz","26","Fizz","28","29","FizzBuzz","31","32","Fizz","34","Buzz","Fizz","37","38","Fizz","Buzz","41","Fizz","43","44","FizzBuzz","46","47","Fizz","49","Buzz","Fizz","52","53","Fizz","Buzz","56","Fizz","58","59","FizzBuzz","61","62","Fizz","64","Buzz","Fizz","67","68","Fizz","Buzz","71","Fizz","73","74","FizzBuzz","76","77","Fizz","79","Buzz","Fizz","82","83","Fizz","Buzz","86","Fizz","88","89","FizzBuzz","91","92","Fizz","94","Buzz","Fizz","97","98","Fizz","Buzz"]`), 100).
+		Each(func(a *assert.Assertions, td TestData) {
 			actual := fizzBuzz(td.Input.(int))
 
 			a.Equal(td.Expectation, actual)
