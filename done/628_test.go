@@ -39,10 +39,10 @@ func maximumProduct(nums []int) int {
 			r2 = n
 		}
 	}
-	return max(l1*l2*l3, r3*r2*l1)
+	return max628(l1*l2*l3, r3*r2*l1)
 }
 
-func max(a, b int) int {
+func max628(a, b int) int {
 	if a < b {
 		return b
 	}

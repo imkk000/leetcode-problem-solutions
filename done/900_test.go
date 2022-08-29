@@ -1,6 +1,7 @@
 package leetcode_test
 
 import (
+	"math"
 	"sort"
 	"strconv"
 	"strings"
@@ -44,14 +45,27 @@ metadata:
     1000000000
 */
 
-const pTable = ":1:2:4:8:16:23:46:128:256:125:0124:0248:0469:1289:13468:23678:35566:011237:122446:224588:0145678:0122579:0134449:0368888:11266777:23334455:01466788:112234778:234455668:012356789:"
+var peekTable = []string{
+	"",
+	"_1_2_4_8_",
+	"_16_23_46_",
+	"_128_256_125_",
+	"_0124_0248_0469_1289_",
+	"_13468_23678_35566_",
+	"_011237_122446_224588_",
+	"_0145678_0122579_0134449_0368888_",
+	"_11266777_23334455_01466788_",
+	"_112234778_234455668_012356789_",
+	"",
+}
 
 func reorderedPowerOf2(n int) bool {
 	s := []byte(strconv.Itoa(n))
 	sort.Slice(s, func(i, j int) bool {
 		return s[i] < s[j]
 	})
-	return strings.Contains(pTable, ":"+string(s)+":")
+	n = int(math.Log10(float64(n))) + 1
+	return strings.Contains(peekTable[n], "_"+string(s)+"_")
 }
 
 func Test_900(t *testing.T) {
@@ -73,6 +87,8 @@ func Test_900(t *testing.T) {
 		Add(true, 23).
 		Add(true, 64).
 		Add(true, 46).
+		Add(true, 4096).
+		Add(false, int(1e9)).
 		Each(func(a *assert.Assertions, td TestData) {
 			actual := reorderedPowerOf2(td.Input.(int))
 
