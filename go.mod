@@ -3,7 +3,7 @@ module leetcode
 go 1.19
 
 require (
-	github.com/nattakit-boonyang/go-testcase-builder v1.0.4
+	github.com/nattakit-boonyang/go-testcase-builder v1.0.5
 	github.com/stretchr/testify v1.8.0
 )
 

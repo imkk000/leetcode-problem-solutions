@@ -1,12 +1,8 @@
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/nattakit-boonyang/go-testcase-builder v1.0.2 h1:s/PsYGHUk57zYriKPoOpXCHz30alX+1TjWEgRiAVcMg=
-github.com/nattakit-boonyang/go-testcase-builder v1.0.2/go.mod h1:KCCZTt/OODIhAWjIUa0KKpg1rlh619Zbql7BX8kxEww=
-github.com/nattakit-boonyang/go-testcase-builder v1.0.3 h1:U88cmNd75HPwN693Em+4xKsFVh+mA06lMGkAP1F2MZE=
-github.com/nattakit-boonyang/go-testcase-builder v1.0.3/go.mod h1:YofL49KmGjbE+PZ3Grk+rqed5YDF9UIoX/NrgtmR7do=
-github.com/nattakit-boonyang/go-testcase-builder v1.0.4 h1:nX7JphHrIQHjkNIgKf0ez8U0d1ZEakh16DgIYphSwJE=
-github.com/nattakit-boonyang/go-testcase-builder v1.0.4/go.mod h1:YofL49KmGjbE+PZ3Grk+rqed5YDF9UIoX/NrgtmR7do=
+github.com/nattakit-boonyang/go-testcase-builder v1.0.5 h1:Gpu0d3FVJvFL5pepvi1kMXeX3TXlwOAk9tx9loHawT4=
+github.com/nattakit-boonyang/go-testcase-builder v1.0.5/go.mod h1:YofL49KmGjbE+PZ3Grk+rqed5YDF9UIoX/NrgtmR7do=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
