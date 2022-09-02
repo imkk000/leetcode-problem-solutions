@@ -29,7 +29,7 @@ func isPowerOfFour(n int) bool {
 	return n&0x55555555 > 0
 }
 
-func TestIsPowerOfFour(t *testing.T) {
+func Test_342(t *testing.T) {
 	NewTestcases(t).
 		Add(true, 16).
 		Add(false, 5).

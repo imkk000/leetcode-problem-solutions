@@ -19,7 +19,17 @@ metadata:
     - "6\n10\n10\n15"
 */
 
-func TestCountPrime(t *testing.T) {
+var tb767 = []int{1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0}
+
+func countPrimeSetBits(left, right int) (c int) {
+	for left <= right {
+		c += tb767[bits.OnesCount(uint(left))]
+		left++
+	}
+	return
+}
+
+func Test_767(t *testing.T) {
 	NewTestcases(t).
 		Add(6, []int{1, 10}).
 		Add(4, []int{6, 10}).
@@ -34,14 +44,4 @@ func TestCountPrime(t *testing.T) {
 
 			a.Equal(td.Expectation, actual)
 		})
-}
-
-var tb = []int{1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0}
-
-func countPrimeSetBits(left, right int) (c int) {
-	for left <= right {
-		c += tb[bits.OnesCount(uint(left))]
-		left++
-	}
-	return
 }

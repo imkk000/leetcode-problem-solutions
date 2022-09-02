@@ -19,7 +19,7 @@ metadata:
     - "1\n3\n5\n6\n10\n12\n15\n100\n10000"
 */
 
-func TestFizzBuzz(t *testing.T) {
+func Test_412(t *testing.T) {
 	NewTestcases(t).
 		Add(MakeStringSlice(`["1"]`), 1).
 		Add(MakeStringSlice(`["1","2","Fizz"]`), 3).
