@@ -1,6 +1,8 @@
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/emirpasic/gods v1.18.1 h1:FXtiHYKDGKCW2KzwZKx0iC0PQmdlorYgdFG9jPXJ1Bc=
+github.com/emirpasic/gods v1.18.1/go.mod h1:8tpGGwCnJ5H4r6BWwaV6OrWmMoPhUl5jm/FMNAnJvWQ=
 github.com/nattakit-boonyang/go-testcase-builder v1.0.5 h1:Gpu0d3FVJvFL5pepvi1kMXeX3TXlwOAk9tx9loHawT4=
 github.com/nattakit-boonyang/go-testcase-builder v1.0.5/go.mod h1:YofL49KmGjbE+PZ3Grk+rqed5YDF9UIoX/NrgtmR7do=
 github.com/nattakit-boonyang/go-testcase-builder v1.0.6 h1:KIzRC5qeToXMKaQCCY9XJ+BgfH3+szkqztf76A19jKw=
