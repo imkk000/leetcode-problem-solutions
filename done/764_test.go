@@ -20,12 +20,6 @@ metadata:
     [1]
 */
 
-// go:exclude
-type Node struct {
-	Val      int
-	Children []*Node
-}
-
 func levelOrder(root *Node) [][]int {
 	result := make([][]int, 0)
 	if root == nil {
