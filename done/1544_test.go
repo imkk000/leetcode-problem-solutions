@@ -26,23 +26,23 @@ metadata:
 */
 
 func goodNodes(root *TreeNode) int {
+	var recursion func(r *TreeNode, max int) int
+	recursion = func(r *TreeNode, max int) (c int) {
+		if max < r.Val {
+			max = r.Val
+		}
+		if r.Val == max {
+			c++
+		}
+		if r.Left != nil {
+			c += recursion(r.Left, max)
+		}
+		if r.Right != nil {
+			c += recursion(r.Right, max)
+		}
+		return
+	}
 	return recursion(root, root.Val)
-}
-
-func recursion(r *TreeNode, max int) (c int) {
-	if max < r.Val {
-		max = r.Val
-	}
-	if r.Val == max {
-		c++
-	}
-	if r.Left != nil {
-		c += recursion(r.Left, max)
-	}
-	if r.Right != nil {
-		c += recursion(r.Right, max)
-	}
-	return
 }
 
 func Test_1544(t *testing.T) {
