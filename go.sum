@@ -9,6 +9,8 @@ github.com/nattakit-boonyang/go-testcase-builder v1.0.6 h1:KIzRC5qeToXMKaQCCY9XJ
 github.com/nattakit-boonyang/go-testcase-builder v1.0.6/go.mod h1:YofL49KmGjbE+PZ3Grk+rqed5YDF9UIoX/NrgtmR7do=
 github.com/nattakit-boonyang/go-testcase-builder v1.0.7 h1:Hzpu8d7K9yYA9yRjMhM67QYZT6nMwyMLi3C+ceZnV4Y=
 github.com/nattakit-boonyang/go-testcase-builder v1.0.7/go.mod h1:YofL49KmGjbE+PZ3Grk+rqed5YDF9UIoX/NrgtmR7do=
+github.com/nattakit-boonyang/go-testcase-builder v1.0.8 h1:pPQl37/8iYHqb2AAXOqdm3V+TzTeXHUk6JXhJags+J4=
+github.com/nattakit-boonyang/go-testcase-builder v1.0.8/go.mod h1:aigEqwWvbu+k/ecHhoZzDhRey3FQGkgDZCEz91pDKvo=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
