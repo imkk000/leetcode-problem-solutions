@@ -23,7 +23,7 @@ metadata:
     "zz"
 */
 
-func removeDuplicates(s string) string {
+func removeDuplicates1128(s string) string {
 	l := len(s)
 	st := newStack1128(l)
 	st.push(s[0])
@@ -81,7 +81,7 @@ func Test_1128(t *testing.T) {
 		Add("z", "z").
 		Add("zy", "zy").
 		Each(func(a *assert.Assertions, td TestData) {
-			actual := removeDuplicates(td.Input.(string))
+			actual := removeDuplicates1128(td.Input.(string))
 
 			a.Equal(td.Expectation, actual)
 		})
