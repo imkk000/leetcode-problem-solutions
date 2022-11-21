@@ -52,15 +52,9 @@ func Test_1568(t *testing.T) {
 		Add(2, MakeTreeNode("[2,3,1,3,1,null,1]")).
 		Add(1, MakeTreeNode("[2,1,1,1,3,null,null,null,null,null,1]")).
 		Add(1, MakeTreeNode("[9]")).
-		Add(885, MakeTreeNode(input1568)).
 		Each(func(a *assert.Assertions, td TestData) {
 			actual := pseudoPalindromicPaths(td.Input.(*TreeNode))
 
 			a.Equal(td.Expectation, actual)
 		})
 }
-
-// go:exclude
-//
-//go:embed testdata/1568_1_in
-var input1568 string
